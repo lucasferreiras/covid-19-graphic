@@ -3,7 +3,7 @@ import React from 'react'
 import Cards from './components/Cards/Cards'
 import Chart from './components/Chart/Chart'
 import CountryPicker from './components/CountryPicker/CountryPicker'
-import fetchData from './api/index'
+import { fetchData, fetchDailyDate } from './api/index'
 
 import styles from './App.css'
 
@@ -19,7 +19,7 @@ class App extends React.Component {
   }
 
   render() {
-    const {data} = this.state
+    const { data } = this.state
 
     return (
       <div className={styles.container}>
